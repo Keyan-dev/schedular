@@ -21,7 +21,7 @@ export default function RootLayout({
         <body className={inter.className}>
           {/* header */}
           <Header />
-          <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+          <main className="md:min-h-screen bg-gradient-to-b from-blue-50 to-white">
             {children}
           </main>
           {/* footer */}

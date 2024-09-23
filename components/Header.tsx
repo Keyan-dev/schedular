@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <nav className="mx-auto py-1 px-4 flex justify-between items-center shadow-md border-b-2">
             <Link href={"/"} className="flex items-center">
-                <Image alt="logo" src={'/logo.png'} width={80} height={30} className="h-16 w-auto" />
+                <Image alt="logo" src={'/logo.png'} width={80} height={30} className="md:h-16 w-auto h-7" />
             </Link>
             <div className="flex items-center gap-3">
                 <Link href={"/events?create=true"}>
