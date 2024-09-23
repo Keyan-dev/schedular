@@ -43,10 +43,10 @@ const howItWorks = [
 export default function Home() {
   return (
     <main className="md:p-5">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-20 px-10 py-5">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 md:mb-20 px-10 md:py-2 py-24">
           <div className="lg:w-1/2">
             <h1 className="text-5xl font-extrabold pb-6 gradient-title">Effortless Scheduling, Anytime, Anywhere</h1>
-            <p className="text-2xl mb-10 text-gray-600">Take the hassle out of managing your time with our intuitive scheduling app. Whether you re organizing personal tasks, planning meetings, or setting reminders, our app is designed to streamline your day. Enjoy features like calendar sync, task prioritization, and smart notifications, all in one easy-to-use interface. Stay organized, save time, and focus on what really matters!</p>
+            <p className="text-xl mb-10 text-gray-600">Take the hassle out of managing your time with our intuitive scheduling app. Whether you re organizing personal tasks, planning meetings, or setting reminders, our app is designed to streamline your day. Enjoy features like calendar sync, task prioritization, and smart notifications, all in one easy-to-use interface. Stay organized, save time, and focus on what really matters!</p>
             <Link href="/dashboard">
               <Button size="lg" className="bg-gradient-to-r from-blue-900 to-blue-400 text-lg flex gap-2">Get Started <ArrowRight className="m1-2 h-5 w-5"/></Button>
             </Link>

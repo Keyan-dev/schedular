@@ -6,9 +6,9 @@ import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 import UserMenu from "./UserMenu";
 const Header = () => {
     return (
-        <nav className="mx-auto py-1 px-4 flex justify-between items-center shadow-md border-b-2">
+        <nav className="mx-auto md:py-1 py-5 px-4 flex justify-between items-center shadow-md border-b-2">
             <Link href={"/"} className="flex items-center">
-                <Image alt="logo" src={'/logo.png'} width={80} height={30} className="md:h-16 w-auto h-7" />
+                <Image alt="logo" src={'/logo.png'} width={80} height={30} className="md:h-16 w-auto h-10" />
             </Link>
             <div className="flex items-center gap-3">
                 <Link href={"/events?create=true"}>
