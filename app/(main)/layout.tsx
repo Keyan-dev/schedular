@@ -20,7 +20,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
     const pathName = usePathname();
     return (<>
         {!isLoaded && <BarLoader width="100%"></BarLoader>}
-        <div className="flex flex-col h-screen bg-blue-50 md:flex-row">
+        <div className="flex flex-col bg-blue-50 md:flex-row">
             <aside className="hidden md:block w-64 bg-white">
                 <nav className="mt-5">
                     {navItems.map((item) => (

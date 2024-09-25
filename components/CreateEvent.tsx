@@ -11,6 +11,7 @@ import {
 import { Button } from "./ui/button"
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import EventForm from "./EventForm";
 const CreateEvent = () => {
     const [isOpen, setIsOpen] = useState(false);
     const searchParams = useSearchParams();
@@ -33,7 +34,9 @@ const CreateEvent = () => {
                         <DrawerTitle>Create new Event</DrawerTitle>
                         <DrawerDescription>you can create new event here</DrawerDescription>
                     </DrawerHeader>
-                    <div>drawer content</div>
+                    <div>
+                        <EventForm onSubmitForm={handleClose}/>
+                    </div>
                     <DrawerFooter>
                         <DrawerClose asChild>
                             <Button variant="outline">Cancel</Button>
