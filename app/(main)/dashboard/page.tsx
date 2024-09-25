@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { useUser } from "@clerk/nextjs"
 
 const Dashboard = () => {
-    const { isLoaded, user } = useUser();
+    const { user } = useUser();
     console.log(user);
     return (
         <div className="space-y-8">
