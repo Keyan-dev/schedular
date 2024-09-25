@@ -3,6 +3,7 @@ import { useUser } from "@clerk/nextjs"
 import { BarChart, Calendar, Clock, Users } from "lucide-react";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 import { BarLoader } from "react-spinners";
 const navItems = [
     { href: "/dashboard", label: "Dashboard", icon: BarChart },
@@ -10,7 +11,11 @@ const navItems = [
     { href: "/meetings", label: "Meetings", icon: Users },
     { href: "/availability", label: "Availability", icon: Clock },
 ];
-const AppLayout = ({ children }) => {
+interface AppLayoutProps {
+    children: ReactNode;
+}
+
+const AppLayout = ({ children }: AppLayoutProps) => {
     const { isLoaded } = useUser();
     const pathName = usePathname();
     return (<>
