@@ -21,3 +21,12 @@ export async function getUserEvents() {
     }}});
     return {events,userName:user.userName};
 }
+
+export async function deleteEvent(eventId){
+    const { userId } = auth();
+    if (!userId) throw new Error("unauthourized");
+    const user = await db.user.findUnique({ where: { clerkUserId: userId } });
+    if (!user) throw new Error("user not found");
+    const deleteEvent=await db.event.delete({where:{id:eventId,userId:user.id}});
+    return deleteEvent;
+}
