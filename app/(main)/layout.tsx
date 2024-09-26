@@ -31,7 +31,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
                     ))}
                 </nav>
             </aside>
-            <main className="flex-1 overflow-y-auto p-4 md:p-8">
+            <main className="flex-1 overflow-y-auto h-screen p-4 md:p-8">
                 <header className="flex justify-between items-center mb-4">
                     <h2 className="text-3xl md:text-4xl gradient-title pt-2 md:pt-0 text-center md:text-left w-full">
                         {navItems.find((item) => item.href == pathName)?.label || 'Dashboard '}
